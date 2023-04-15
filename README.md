@@ -1673,3 +1673,30 @@ Every emoji grouped by it's length in JavaScript
 🏴󠁧󠁢󠁥󠁮󠁧󠁿,
 🏴󠁧󠁢󠁳󠁣󠁴󠁿,
 🏴󠁧󠁢󠁷󠁬󠁳󠁿
+
+# Source
+
+https://www.prosettings.com/emoji-list/
+
+```js
+function printEmojis() {
+    const nodes = document.querySelectorAll('.echars');
+
+    const dict = {};
+
+    nodes
+        .forEach((entry) => {
+            const text = entry.innerHTML;
+
+            if(!dict[text.length]) {
+                dict[text.length] = [];
+            }
+
+            dict[text.length].push(text);
+        });
+
+    console.log(dict);
+}
+
+printEmojis();
+```
