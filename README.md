@@ -1,5 +1,5 @@
 # EmojiGroupedByLength
-Every emoji grouped by it's length in JavaScript
+Every emoji grouped by its length in JavaScript
 
 ```js
 '☺'.length   // 1
